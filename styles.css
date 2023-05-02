@@ -28,7 +28,7 @@ header p {
 body {
     background-color: #ffd7d7;
     padding: .5em 2.5em;
-    margin: 5em 3em;
+    margin: auto 3em;
     border: .5em solid #ffffff;
     border-radius: 5em;
 }
