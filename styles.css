@@ -1,16 +1,44 @@
-main img {
-    width: 30%;
-    height: auto;
-}
-
 :root {
-    background-image: url("images/background.jpg");
+    background-image: linear-gradient(to bottom, white 25%, rgb(120, 115, 198) 100%);
+    /*
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    */
+}
+
+body {
+    padding: .5em 2.5em;
+    margin: auto;
+    
 }
 
 /*Header*/
+
+nav {
+    float: right;
+}
+#nav_list ul {
+    list-style: none;
+    margin-left: 1.25em;
+    margin-bottom: 1.5em;
+}
+
+#nav_list ul li {
+    width: 200px;
+    margin-bottom: .5em;
+    border: 2px solid black;
+}
+
+#nav_list ul li a {
+    display: block;
+    padding: .5em 0 .5em 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+
+}
+
 
 h1 {
     text-align: center;
@@ -25,33 +53,64 @@ header p {
     font-family: sans-serif;
 }
 
-body {
-    background-color: #ffd7d7;
-    padding: .5em 2.5em;
-    margin: auto 3em;
-    border: .5em solid #ffffff;
-    border-radius: 5em;
-}
-
-
 /*main*/
 
-main h2 {
+img {
+    width: 30%;
+    height: auto;
+    float: left;
+}
+
+aside {
+    width: 350px;
+    float: right;
+    padding: 20px;
+    margin-right: 20px;
+    float: left;
+    /*
+    margin: 0;
+    padding: 0;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    */
+}
+
+aside h2 {
     text-align: center;
 }
 
-ul li {
-    color: rgb(3, 70, 3);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+aside ul {
+    margin: 0;
+    margin-bottom: 1.5em
 }
 
-h1+p {
+aside li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 150%;
+}
+
+aside li img {
+    width: 8%;
+    height: auto;
+}
+
+aside ul li {
+    color: rgb(3, 70, 3);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: .5em;
+}
+
+h1 p {
     font-style: oblique;
+    float: right;
 }
 
 footer {
     text-align: center;
     font-size: 75%;
+    clear: both;
 }
 
 /*
