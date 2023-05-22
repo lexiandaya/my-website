@@ -1,0 +1,30 @@
+:root {
+    background-image: linear-gradient(to bottom, white 25%, #7873c6 100%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav {
+    float: right;
+    width: 20%;
+    grid-area: navi;
+}
+
+#nav_list ul {
+    list-style: none;
+    margin-left: 1.25em;
+    margin-bottom: 1.5em;
+}
+
+#nav_list ul li {
+    width: 200px;
+    margin-bottom: .5em;
+    border: 2px solid #000000;
+}
+
+#nav_list ul li a {
+    display: block;
+    padding: .5em 0 .5em 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}

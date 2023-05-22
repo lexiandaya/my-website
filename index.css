@@ -1,14 +1,21 @@
 :root {
     background-image: linear-gradient(to bottom, white 25%, #7873c6 100%);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body {
     /* padding: .5em 2.5em;*/
     margin: 0;
     width: 100%;
+    display: grid;
+    /* grid-template-rows: 1fr;
+	grid-template-columns: repeat (3, auto);
+    grid-template-areas:
+        "head"
+        "navi"
+        "main"
+        "foot"; */
+
 
 }
 
@@ -17,18 +24,22 @@ body {
 nav {
     float: right;
     width: 20%;
+    grid-area: navi;
 }
 
 #nav_list ul {
     list-style: none;
     margin-left: 1.25em;
     margin-bottom: 1.5em;
+    display: flex;
+    flex-direction: column;
 }
 
 #nav_list ul li {
     width: 200px;
     margin-bottom: .5em;
-    border: 2px solid black;
+    border: 2px solid #000000;
+    flex-basis: 20%;
 }
 
 #nav_list ul li a {
@@ -64,12 +75,11 @@ header p {
 /*main*/
 
 main img {
-    width: 35%;
+    width: 30%;
     height: auto;
     float: left;
     padding: 0;
     margin-left: .5em;
-    min-width: 10px;
 }
 
 aside {
@@ -92,10 +102,11 @@ aside ul {
 }
 
 aside li {
-    display: flex;
     align-items: center;
     margin-bottom: 10px;
     font-size: 150%;
+    display: flex;
+    flex-basis: 100%;
 }
 
 aside li img {
@@ -105,7 +116,6 @@ aside li img {
 
 aside ul li {
     color: #034603;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: .5em;
 }
 
@@ -124,20 +134,39 @@ section {
     margin-left: 12em;
     width: 75%;
     text-align: center;
+    grid-row: 3 / 4;
+    padding: 0;
 }
 
 section p {
     font-size: 1.25em;
+    line-height: 1.5em;
+    color: #034603;
 }
 
+/* #mobile_menu {
+    display: none;
+    grid-area: navi;
+} */
 
-@media only screen and (max-width: 796px) {
-    header h2 {
-        font-size: 1.375em;
+
+
+@media only screen and (max-width: 776px) {
+
+    header h1 {
+        font-size: 1.5em;
     }
 
-    header h3 {
-        font-size: .75em
+    header p {
+        font-size: .75em;
+    }
+
+    aside h2 {
+        font-size: 1em
+    }
+
+    aside ul {
+        font-size: 1em;
     }
 
     main img {
@@ -151,21 +180,71 @@ section p {
     }
 }
 
-/* Aside elements */
+@media only screen and (max-width: 744px) {
 
-@media only screen and (max-width: 1000px) {
-    aside {
+    section {
         float: right;
+        clear: none;
+        margin-right: auto;
+        margin-left: 0;
+        text-align: center;
+        font-size: 65%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+
+    nav {
+        size-adjust: 25%;
+        width: fit-content;
+        height: fit-content;
+        }
+
+    aside {
+        /* clear: left; */
+        float: none;
     }
 
-    aside h2 {
-        font: .60em;
+    aside li {
+        font-size: 1em;
+    }
+
+    section {
+        grid-row: 3 / 4;
+    }
+}
+
+@media only screen and (max-width: 1104px) {
+    
+    main img {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 1026px) {
+    aside {
+        float: left;
     }
 
     aside ul {
         font-size: .75em;
     }
 
+    section {
+        float: right;
+        clear: none;
+        margin-right: auto;
+        margin-left: 0;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 1335px) {
+
+    nav {
+        width: fit-content;
+    }
 }
 
 /*
