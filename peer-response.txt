@@ -1,0 +1,11 @@
+From Dean Perkins: Adding height property of 100% to body and avoid having each link open in a new window.
+
+From Adam Tucker: Convert to a top navigation and write MORE.
+
+As Dean suggested, I set my height to the body element in my CSS to 100%, but I diamondt really know if that did much. However, I added it to the
+root and that weird rollover the gradient was doing on my other pages is now gone! I also got rid of the target="_blank"
+for my nav links so they do not open on new pages every time. Adam also had really great suggestions, and I am in the 
+process of writing more material for my other pages now that I don't really have to worry about my CSS. Initially, I was 
+going to have your normal navigation bar at the top of the screen. At the time I like the look of the nav bar on the side and 
+I still do. I know this is probably not ideal for mobile users, but I am trying to read more on the mobile nav menus. As of right now
+the side nav bar is cooperating with me. I will still consider it, although I wish I did it from the start.  

@@ -1,8 +1,34 @@
 :root {
     background-image: linear-gradient(to bottom, white 25%, #7873c6 100%);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Faustina', serif;
+    font-weight: bolder;
+    height: 100%;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 
+h1 {
+    text-align: center;
+}
+
+h1 img {
+    vertical-align: middle;
+}
+.diamond {
+    width: 4%;
+}
+
+header p {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* nav menu */
 nav {
     float: right;
     width: 20%;
