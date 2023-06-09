@@ -2,7 +2,6 @@
     background-image: linear-gradient(to bottom, white 25%, #7873c6 100%);
     font-family: 'Faustina', serif;
     font-weight: bolder;
-    height: 100%;
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 
@@ -13,7 +12,7 @@ h1 {
 h1 img {
     vertical-align: middle;
 }
-.diamond {
+.icon {
     width: 4%;
 }
 
@@ -26,13 +25,89 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+aside {
+    width: 45%;
+    float: left;
+    margin-left: 5em;
+}
+
+aside h2 {
+    display: block;
+    margin-left: 0;
+    margin-bottom: 0;
+    font-size: 40px;
+}
+
+#container2 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 11em;
+}
+
+aside img {
+    display: flex;
+    width: 120px;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.asideimg2 {
+    display: block;
+    margin-left: 4em;
+}
+
+#spiderjockey {
+    width: 200px;
+}
+
+#cow {
+    width: 170px;
+}
+
+#pig {
+    width: 200px;
+}
+
+aside p {
+    color: #034603;
+    font-size: 20px;
+    margin-top: 0.25em;
+    line-height: 1.5em;
+}
+
+section {
+    float: right;
+    text-align: center;
+    margin-right: 2em;
+    margin-top: em;
+    width: 40%;
+}
+
+.sideimg {
+    text-align: right;
+}
+
+section p {
+    line-height: 1.5em;
+    font-size: 18px;
+    text-align: right;
+
 }
 
 /* nav menu */
 nav {
     float: right;
-    width: 20%;
-    grid-area: navi;
+    margin-right: 1em;
 }
 
 #nav_list ul {
@@ -54,3 +129,87 @@ nav {
     font-weight: bold;
     color: black;
 }
+
+
+footer {
+    text-align: center;
+    font-size: 75%;
+    clear: both;
+    padding-top: 15em;
+}
+
+@media only screen and (max-width: 744px) {
+
+    aside {
+        float: right;
+        clear: none;
+        margin-right: auto;
+        margin-left: 0;
+        text-align: center;
+        font-size: 65%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+
+    nav {
+        size-adjust: 25%;
+        width: fit-content;
+        height: fit-content;
+        }
+
+    aside {
+        /* clear: left; */
+        float: none;
+    }
+
+}
+
+@media only screen and (max-width: 1125px) {
+
+    aside h2 {
+        font-size: 90%;
+    }
+    aside p {
+        font-size: 75%;
+    }
+}
+
+@media only screen and (max-width: 1104px) {
+    
+    aside,
+    .asideimg2,
+    #spiderjockey,
+    #cow
+            {
+        width: 15%;
+    }
+}
+
+@media only screen and (max-width: 1026px) {
+    aside {
+        float: left;
+    }
+
+    aside ul {
+        font-size: .75em;
+    }
+
+    aside {
+        width: auto;
+    }
+
+}
+
+@media only screen and (max-width: 1338px) {
+
+    nav {
+        width: fit-content;
+    }
+
+    aside {
+        margin: 1em;
+    }
+}
+
+    
